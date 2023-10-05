@@ -1,9 +1,18 @@
 <template>
-  <nav>
-    <NuxtLink to="/" class="navlinks"
-      ><img src="../assets/images/logo.png" alt=""
+  <nav class="flex justify-between bg-slate-100 p-8">
+    <NuxtLink
+      to="/"
+      class="no-underline text-blue-950 font-bold transition-colors ease-linear duration-300 hover:text-blue-300"
+      ><img
+        src="../assets/images/logo.png"
+        alt=""
+        class="w-20 absolute left-16 top-4"
     /></NuxtLink>
-    <NuxtLink to="/cart" class="navlinks">My Cart</NuxtLink>
+    <NuxtLink
+      to="/cart"
+      class="no-underline text-blue-950 font-bold transition-colors ease-linear duration-300 hover:text-blue-300"
+      >My Cart</NuxtLink
+    >
   </nav>
 </template>
 
@@ -11,29 +20,4 @@
 export default {};
 </script>
 
-<style scoped>
-nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(231, 242, 255);
-  padding: 2em;
-}
-
-.navlinks {
-  text-decoration: none;
-  color: rgb(33, 37, 41);
-  font-weight: bold;
-  transition: color 0.3s linear;
-}
-
-.navlinks:hover {
-  color: rgb(110, 175, 255);
-}
-
-img {
-  width: 78px;
-  position: absolute;
-  left: 4rem;
-  top: 1rem;
-}
-</style>
+<style scoped></style>

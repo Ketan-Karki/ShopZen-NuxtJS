@@ -1,10 +1,10 @@
 <template>
   <div>
     <img :src="`${card.image}`" />
-    <h3 class="header">
+    <h3 class="text-xl mt-1 text-black">
       {{ card.name }}
     </h3>
-    <p class="snippet">
+    <p class="text-gray-400">
       {{ card.company }}
     </p>
   </div>
@@ -16,18 +16,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.header {
-  font-size: 1.15rem;
-  margin-top: 0.4rem;
-  color: black;
-}
-
-.header:hover {
-  color: black;
-  text-decoration: none;
-}
-.snippet {
-  color: grey;
-}
-</style>
+<style scoped></style>

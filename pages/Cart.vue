@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="cart_heading">
-      <p>Item</p>
-      <p>Price</p>
-      <p>Quantity</p>
-      <p>Subtotal</p>
-      <p>Remove</p>
+    <div class="mx-2 my-8 text-center uppercase grid grid-cols-5 items-center">
+      <p class="col-span-1">Item</p>
+      <p class="col-span-1">Price</p>
+      <p class="col-span-1">Quantity</p>
+      <p class="col-span-1">Subtotal</p>
+      <p class="col-span-0.3">Remove</p>
     </div>
-    <hr />
+    <hr class="mt-1" />
     <div class="cart-item">
       <MyItem v-for="item in myCart" :key="item.id" :item="item" />
     </div>
@@ -24,16 +24,4 @@ export default {
 };
 </script>
 
-<style>
-.cart_heading {
-  margin: 2em;
-  text-align: center;
-  text-transform: uppercase;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr) 0.3fr;
-  align-items: center;
-}
-hr {
-  margin-top: 1rem;
-}
-</style>
+<style></style>

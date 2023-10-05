@@ -1,20 +1,26 @@
 <template>
   <div>
-    <div class="cart_heading">
-      <div class="cart-image--name">
-        <div>
+    <div class="m-2 text-center uppercase grid grid-cols-5 items-center">
+      <div
+        class="col-span-1 items-center grid gap-1 grid-cols-2 capitalize text-left"
+      >
+        <div class="col-span-0.4">
           <figure>
-            <img :src="item.image" alt="{id}" />
+            <img
+              :src="item.image"
+              alt="{id}"
+              class="max-w-[5rem] h-20 object-contain"
+            />
           </figure>
         </div>
-        <div>
-          <p>{{ item.name }}</p>
+        <div class="col-span-1">
+          <p class="text-lg text-gray-600">{{ item.name }}</p>
         </div>
       </div>
-      <div>
-        <p class="price">₹ {{ item.price }}</p>
+      <div class="col-span-1">
+        <p class="text-lg text-green-600">₹ {{ item.price }}</p>
       </div>
-      <div>
+      <div class="col-span-1">
         <div className="cart-button">
           <div className="amount-toggle">
             <button @click="() => setDecrease()">-</button>
@@ -23,10 +29,12 @@
           </div>
         </div>
       </div>
-      <div><p>SubTotal</p></div>
-      <div>
+      <div class="col-span-1">
+        <p class="text-lg text-gray-600">SubTotal</p>
+      </div>
+      <div class="col-span-0.3">
         <button
-          class="button"
+          class="no-underline max-w-screen-xl text-white bg-blue-950 py-3 px-4 rounded-md uppercase text-center cursor-pointer transition-all duration-300 hover: shadow-blue-800 hover:scale-95"
           @click="
             () => {
               removeItem(item.id);
@@ -52,70 +60,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.item-container {
-  margin: 30px;
-}
-.text-container {
-  padding: 0 10px;
-}
-img {
-  /* width: 105px; */
-  height: 200px;
-  object-fit: cover;
-}
-p {
-  font-size: 18px;
-  color: grey;
-}
-.button {
-  text-decoration: none;
-  max-width: auto;
-  color: white;
-  background-color: rgb(28, 52, 84);
-  padding: 0.75rem 1rem;
-  border: none;
-  border-radius: 5px;
-  text-transform: uppercase;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-}
-
-.button:hover {
-  box-shadow: 0 2rem 2rem 0 rgb(132 144 255 / 30%);
-  transform: scale(0.96);
-}
-
-.price {
-  color: green;
-}
-
-.cart_heading {
-  margin: 2em;
-  text-align: center;
-  text-transform: uppercase;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr) 0.3fr;
-  align-items: center;
-}
-
-.cart-image--name {
-  /* background-color: red; */
-  align-items: center;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 0.4fr 1fr;
-  text-transform: capitalize;
-  text-align: left;
-}
-.cart-image--name > img {
-  max-width: 5rem;
-  height: 5rem;
-  object-fit: contain;
-  color: transparent;
-}
-</style>
+<style scoped></style>

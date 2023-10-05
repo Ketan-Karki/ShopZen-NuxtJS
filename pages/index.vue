@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="prodDisplay">
+    <div class="grid grid-cols-3">
       <ProductDisplay
         v-for="productInfo in data"
         :key="productInfo.id"
@@ -21,22 +21,4 @@ export default {
 };
 </script>
 
-<style>
-nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: whitesmoke;
-  padding: 2em;
-}
-
-.navlinks {
-  text-decoration: none;
-  color: #35495e;
-  font-weight: bold;
-}
-
-.prodDisplay {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-</style>
+<style></style>
