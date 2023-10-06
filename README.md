@@ -9,11 +9,6 @@ This is a simple two page ecommerce site which has a product listing page and a 
   - [Introduction](#introduction)
   - [Features](#features)
   - [Installation](#installation)
-  - [Usage](#usage)
-  - [Configuration](#configuration)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
