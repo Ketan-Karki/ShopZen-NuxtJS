@@ -9,11 +9,6 @@ This is a simple two page ecommerce site which has a product listing page and a 
   - [Introduction](#introduction)
   - [Features](#features)
   - [Installation](#installation)
-  - [Usage](#usage)
-  - [Configuration](#configuration)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -21,7 +16,7 @@ I've build this project using NuxtJS and TailwindCSS. In this project, user can 
 
 ## Features
 
-List the key features of your project. You can use bullet points or a table.
+Key features of my project.
 
 - Product Listing
 - Add to Cart
@@ -30,7 +25,6 @@ List the key features of your project. You can use bullet points or a table.
 
 ## Screenshots
 
-Include screenshots or GIFs of your project in action. You can use images hosted on platforms like Imgur or GitHub.
 
 ![Screenshot 1](screenshots/screenshot1.png)
 ![Screenshot 2](screenshots/screenshot2.png)
@@ -41,10 +35,10 @@ Include screenshots or GIFs of your project in action. You can use images hosted
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-project.git
+git clone https://github.com/KetanKarki26/ShopZen-NuxtJS
 
 # Navigate to the project directory
-cd your-project
+cd ShopZen-NuxtJS
 
 # Install dependencies
 npm install
