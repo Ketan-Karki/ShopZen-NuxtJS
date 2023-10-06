@@ -21,7 +21,7 @@ I've build this project using NuxtJS and TailwindCSS. In this project, user can 
 
 ## Features
 
-List the key features of your project. You can use bullet points or a table.
+Key features of my project.
 
 - Product Listing
 - Add to Cart
@@ -30,7 +30,6 @@ List the key features of your project. You can use bullet points or a table.
 
 ## Screenshots
 
-Include screenshots or GIFs of your project in action. You can use images hosted on platforms like Imgur or GitHub.
 
 ![Screenshot 1](screenshots/screenshot1.png)
 ![Screenshot 2](screenshots/screenshot2.png)
