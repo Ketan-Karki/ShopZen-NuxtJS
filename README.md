@@ -39,10 +39,10 @@ Include screenshots or GIFs of your project in action. You can use images hosted
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-project.git
+git clone https://github.com/KetanKarki26/ShopZen-NuxtJS
 
 # Navigate to the project directory
-cd your-project
+cd ShopZen-NuxtJS
 
 # Install dependencies
 npm install
