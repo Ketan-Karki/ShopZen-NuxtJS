@@ -9,17 +9,22 @@
     </div>
     <hr class="mt-1" />
     <div class="cart-item">
-      <MyItem v-for="item in myCart" :key="item.id" :item="item" />
+      <MyItem v-for="item in cartItems" :key="item.id" :item="item" />
     </div>
   </div>
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   computed: {
-    ...mapState(["myCart"]),
+    ...mapGetters({
+      cartItems: "getCartItems",
+    }),
+  },
+  beforeMount() {
+    this.$store.commit("INITIATE_CART");
   },
 };
 </script>

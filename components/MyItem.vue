@@ -35,7 +35,7 @@
       <div class="col-span-0.3">
         <button
           class="no-underline max-w-screen-xl text-white bg-blue-950 py-3 px-4 rounded-md uppercase text-center cursor-pointer transition-all duration-300 hover: shadow-blue-800 hover:scale-95"
-          @click="
+          @click.prevent="
             () => {
               removeItem(item.id);
             }

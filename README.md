@@ -22,6 +22,7 @@ Key features of my project.
 - Add to Cart
 - Remove from Cart
 - Contains hover effects for enhanced user experience
+- Cart Data persists even after refresh
 
 ## Screenshots
 

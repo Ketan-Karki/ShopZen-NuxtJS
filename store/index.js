@@ -649,8 +649,8 @@ export const state = () => ({
 });
 
 export const getters = {
-  getProductById: (state) => (id) => {
-    return state.products.find((product) => product.id == id);
+  getCartItems(state) {
+    return state.myCart;
   },
 };
 
@@ -658,10 +658,16 @@ export const mutations = {
   addItem(state, id) {
     let item = state.products.find((product) => product.id == id);
     state.myCart.push(item);
+    localStorage.setItem("cart", JSON.stringify(state.myCart));
   },
   removeItem(state, id) {
     const i = state.myCart.map((item) => item.id).indexOf(id);
-    let item = state.products.find((product) => product.id == id);
     state.myCart.splice(i, 1);
+    localStorage.setItem("cart", JSON.stringify(state.myCart));
+  },
+  INITIATE_CART(state) {
+    if (localStorage.getItem("cart")) {
+      state.myCart = JSON.parse(localStorage.getItem("cart"));
+    }
   },
 };
